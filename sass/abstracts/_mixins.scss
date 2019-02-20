@@ -1,0 +1,28 @@
+@mixin main-section {
+  // background-color: $color-background-grey;
+
+  grid-column: main-start / main-end;
+  padding-top: 0rem;
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+}
+
+@mixin main-section-header {
+  grid-column: 1 / 18;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  padding: 0.3rem;
+  padding-left: 0rem;
+  font-size: $font-h1-size;
+  font-weight: 300;
+  color: white;
+  // background-color: $color-sectionheader-blue;
+  background-color: $color-green-dark;
+
+  @media screen and (max-width: 1200px) {
+    font-size: $font-h1-size-1;
+    padding: 0.2rem;
+    padding-left: 3rem;
+  }
+}

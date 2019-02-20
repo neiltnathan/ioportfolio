@@ -1,0 +1,91 @@
+.training-container {
+  @include main-section;
+
+  // @media screen and (max-width: 900px) {
+  //   visibility: hidden;
+  //   display: none;
+  // }
+
+  &__header {
+    @include main-section-header;
+  }
+
+  &__body {
+    padding: 5rem;
+    padding-top: 3rem;
+    grid-column: 5 / 15; //controls width and position of main white background area
+    @media screen and (max-width: 1200px) {
+      grid-column: 2 / 17;
+    }
+    background-color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $color-grey-light-2;
+    font-size: $font-h3-size;
+
+    &__table {
+      display: block;
+      height: 75vh;
+      overflow-y: scroll;
+      overflow: auto;
+
+      border-collapse: separate;
+      border-spacing: 0;
+
+      & th,
+      td {
+        padding: 1rem 1.5rem;
+        vertical-align: middle;
+      }
+
+      //hide 4th column  status
+      & td:nth-of-type(4) {
+        display: none;
+        // visibility: collapse;
+      }
+
+      & thead {
+        // background-color: $color-sectionheader-blue;
+        background-color: $color-green-dark;
+
+        color: #fff;
+
+        text-transform: uppercase;
+      }
+
+      & tbody {
+      }
+
+      //hide header of  4th column  status
+      & th:nth-of-type(4) {
+        display: none;
+        // visibility: collapse;
+      }
+
+      & th.sticky-header {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: $color-green-dark;
+      }
+
+      & th:first-child {
+        border-top-left-radius: 3px;
+        text-align: left;
+      }
+      & th:last-child {
+        border-top-right-radius: 3px;
+      }
+      & tbody tr:nth-child(even) {
+        background: $color-background-grey;
+      }
+      & td {
+        border-bottom: 1px solid $color-table-border-grey;
+        border-right: 1px solid $color-table-border-grey;
+      }
+      & td:first-child {
+        border-left: 1px solid $color-table-border-grey;
+      }
+    }
+  }
+}

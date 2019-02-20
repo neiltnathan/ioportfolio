@@ -1,0 +1,70 @@
+// .main {
+//   //background-color: pink;
+
+//   display: grid;
+//   grid-template-columns: repeat(7, 1fr);
+//   grid-template-rows: repeat(auto-fit, 25, 5vw);
+//   grid-gap: 1rem;
+
+//   &-intro-header {
+//     grid-row: 2 / span 1;
+//     grid-column: 3 / span 3;
+//     font-size: 3.2rem;
+//     color: $color-green-dark;
+//     text-align: center;
+//   }
+
+//   &-intro-body {
+//     grid-row: 3 / span 1;
+//     grid-column: 2 / span 5;
+//     font-size: 1.8rem;
+//     color: $color-grey-light-2;
+//     text-align: center;
+//     text-align: justify;
+//   }
+
+//   &-whatcanido-header {
+//     grid-row: 5 / span 1;
+//     grid-column: 2 / span 3;
+//     font-size: 3.2rem;
+//     color: $color-green-dark;
+//     text-align: left;
+//   }
+
+//   &-whatcanido-body {
+//     grid-row: 6 / span 1;
+//     grid-column: 2 / span 5;
+//     font-size: 1.8rem;
+//     color: $color-grey-light-2;
+//     text-align: center;
+//     text-align: justify;
+//   }
+
+//   &-skills__overview--body-card {
+//     display: inline-block;
+
+//     &-img {
+//       width: 5rem;
+//       height: 5rem;
+//       margin-right: 1rem;
+//       margin-bottom: 1rem;
+//     }
+//   }
+//   .webskills {
+//     grid-row: 12 / span 1;
+//     grid-column: 2 / span 4;
+
+//     &-header {
+//       grid-row: 10 / span 1;
+//       grid-column: 2 / span 3;
+//       font-size: 3.2rem;
+//       color: $color-green-dark;
+//       text-align: left;
+//     }
+//   }
+
+//   .webskills2 {
+//     grid-row: 12 / span 1;
+//     grid-column: 4 / span 5;
+//   }
+// }

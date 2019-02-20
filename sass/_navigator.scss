@@ -1,0 +1,142 @@
+.flag-menu {
+  list-style: none;
+  margin: 2rem 16.5% -5rem 0;
+  padding: 0;
+  display: flex;
+  //flex-wrap: wrap;
+  justify-content: flex-end;
+
+  &__item {
+    margin-left: 1rem;
+
+    & > a {
+      & > img {
+        width: 85%;
+      }
+    }
+  }
+}
+
+.navigator-menu {
+  list-style: none;
+  margin: 0 0 5rem 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 7rem;
+}
+
+.navigator-menu__item {
+  flex: 7rem 0 10rem;
+  font-family: $font-display-1;
+  font-size: 1.7rem;
+  color: $color-grey-light-2;
+
+  border: solid 1px lighten($color-grey-light-2, 27%);
+  border-radius: 5px;
+  margin: 0.3rem;
+  margin-left: 0.5;
+  margin-top: 1rem;
+
+  @media screen and (max-width: 900px) {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (max-width: 750px) {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1.3rem;
+  }
+
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(222, 234, 231, 1) 60%,
+    rgb(222, 234, 231) 96%,
+    rgb(44, 174, 153) 96%
+  );
+
+  background-size: 100% 200%;
+  background-position: top center;
+
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    background-position: bottom center;
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+  & a {
+    color: $color-grey-light-2;
+    display: block;
+
+    padding: 1rem 0;
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+#home,
+#about,
+#services,
+#portfolio,
+#testimonials,
+#contact,
+#hire,
+#training {
+  background: $color-green-medium;
+  & a {
+    color: $color-white;
+  }
+}
+
+.navigator {
+  //   background-color: #fff;
+  //   z-index: 1000;
+  //   position: fixed;
+  //   top: 4rem;
+  //right: 30%;
+  margin-top: 5rem;
+  display: flex;
+
+  justify-content: center;
+  & ul {
+    display: flex;
+    & a {
+      padding: 1rem 2rem;
+
+      @media screen and (max-width: 900px) {
+        padding: 1rem 2rem;
+      }
+
+      @media screen and (max-width: 700px) {
+        padding: 1rem 1.5rem;
+      }
+
+      @media screen and (max-width: 600px) {
+        padding: 1rem 1rem;
+      }
+
+      @media screen and (max-width: 500px) {
+        padding: 1rem 0.5rem;
+      }
+    }
+  }
+
+  &-menu__item {
+    text-transform: uppercase;
+  }
+}
+
+.active {
+  background: red;
+}

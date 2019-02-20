@@ -1,0 +1,189 @@
+// COLOR VARIABLES
+$color-green-light: #deeae7;
+$color-green-medium: #2cae99;
+$color-green-dark: #229987;
+
+$color-white: #fff;
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+$color-background-grey: #e3e7ea;
+$color-sectionheader-blue: #7a9cc7;
+$color-table-border-grey: #cecfd5;
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+$font-display-1: "Raleway", sans-serif;
+
+$font-h1-size: 2rem;
+$font-h1-size-1: 1.8rem;
+$font-h3-size: 1.3rem;
+
+// FONT SIZES
+//Home Page
+
+$font-size-main-header-L: 2.7rem;
+$font-size-main-header-sub-L: 2.3rem;
+$font-size-main-body-L: 1.8rem;
+
+$font-size-main-header-M: 2.5rem;
+$font-size-main-header-sub-M: 2.2rem;
+$font-size-main-body-M: 1.7rem;
+
+$font-size-main-header-S: 2.3rem;
+$font-size-main-header-sub-S: 2.2rem;
+$font-size-main-body-S: 1.6rem;
+
+$font-size-section-header-L: 2.3rem;
+$font-size-section-header-sub-L: 1.8rem;
+$font-size-section-body-L: 1.8rem;
+
+$font-size-section-header-M: 2.1rem;
+$font-size-section-header-sub-M: 1.7rem;
+$font-size-section-body-M: 1.7rem;
+
+$font-size-section-header-S: 2rem;
+$font-size-section-header-sub-S: 1.6rem;
+$font-size-section-body-S: 1.6rem;
+
+//contact & hire page
+
+// $font-size-main-header-L: 3.5rem;
+// $font-size-main-header-M: 3rem;
+// $font-size-main-header-S: 2.5rem;   //see above
+
+$font-size-sub-header-L: 2.5rem;
+$font-size-sub-header-M: 2.3rem;
+$font-size-sub-header-S: 2.1rem;
+
+$font-size-body-L: 1.8rem;
+$font-size-body-M: 1.7rem;
+$font-size-body-S: 1.6rem;
+
+$font-size-contact-button-L: 1.8rem;
+$font-size-contact-button-M: 1.7rem;
+$font-size-contact-button-S: 1.6rem;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-display-1;
+  color: $color-grey-dark-2;
+  font-weight: 300;
+  line-height: 1.6;
+  //max-width: 1200px;
+}
+
+ul {
+  //list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: $color-green-dark;
+  font-weight: 500;
+}
+
+.square-box {
+  border-collapse: collapse;
+  border-radius: 2rem;
+  position: relative;
+  width: 15%;
+  overflow: hidden;
+  background: $color-green-medium;
+  @media screen and (max-width: 1250px) {
+    width: 15%;
+  }
+}
+.square-box:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.square-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: $color-white;
+}
+.square-content div {
+  display: table;
+
+  width: 100%;
+  height: 100%;
+}
+.square-content span {
+  display: table-cell;
+
+  font-size: 2rem;
+  font-family: $font-display-1;
+  text-align: center;
+  vertical-align: middle;
+  color: $color-white;
+}
+
+.horizontal-top-line {
+  display: block;
+  border: 0;
+  border-top: 2px solid $color-green-light;
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+}
+
+.horizontal-bottom-line {
+  display: block;
+  border: 0;
+  border-top: 1px solid $color-green-light;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+.horizontal-bottom-line__testimonials {
+  display: block;
+  border: 0;
+  border-top: 1px solid $color-green-light;
+  margin: 0 auto;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+  width: 80%;
+}
+
+.link-span {
+  display: table;
+  margin: 0 auto;
+  font-size: $font-size-main-body-S;
+  color: $color-grey-light-2;
+}
+
+.dutch-translations {
+  color: red;
+  font-size: 3rem;
+}

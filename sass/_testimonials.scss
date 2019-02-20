@@ -1,0 +1,134 @@
+.testimonials {
+  display: grid;
+
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(autofit, 3, 5vw);
+  grid-gap: 3rem;
+
+  &-headers {
+    grid-row: 1 / span 1;
+    grid-column: 4 / -4;
+
+    @media screen and (max-width: 1450px) and (-webkit-min-device-pixel-ratio: 3) {
+      grid-column: -1 / -2;
+    }
+
+    @media screen and (max-width: 1200px) {
+      grid-column: 2 / -2;
+    }
+    @media screen and (max-width: 600px) {
+      grid-column: 1 / -1;
+    }
+
+    &-header {
+      font-size: $font-size-main-header-L;
+      font-weight: 300;
+      color: $color-green-dark;
+      text-align: center;
+
+      @media screen and (max-width: 900px) {
+        font-size: $font-size-main-header-M;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: $font-size-main-header-S;
+      }
+    }
+
+    &-header-sub {
+      font-size: $font-size-main-header-sub-L;
+      font-weight: 300;
+      color: $color-green-medium;
+      text-align: center;
+      margin-bottom: 2rem;
+
+      @media screen and (max-width: 900px) {
+        font-size: $font-size-main-header-sub-M;
+      }
+
+      @media screen and (max-width: 600px) {
+        font-size: $font-size-main-header-sub-S;
+      }
+    }
+  }
+
+  &-blocks {
+    grid-row: 3 / span 1;
+    grid-column: 4 / -4;
+
+    @media screen and (max-width: 1950px) {
+      grid-column: 3 / -3;
+    }
+
+    @media screen and (max-width: 1450px) and (-webkit-min-device-pixel-ratio: 3) {
+      grid-column: -1 / -2;
+    }
+
+    @media screen and (max-width: 1200px) {
+      grid-column: 2 / -2;
+    }
+
+    @media screen and (max-width: 900px) {
+      grid-column: 1 / -1;
+    }
+    @media screen and (max-width: 600px) {
+      grid-column: 1 / -1;
+    }
+
+    &-blockquote {
+      border-left: 3px solid $color-green-medium;
+      margin-left: 5rem;
+      margin-bottom: 2.5rem;
+      &__quotation {
+        //margin: 0 auto;
+        quotes: "\201C" "\201D" "\2018" "\2019";
+        padding: 10px 20px;
+        line-height: 1.4;
+
+        color: $color-grey-light-2;
+        font-size: $font-size-section-body-L;
+
+        @media screen and (max-width: 900px) {
+          font-size: $font-size-section-body-M;
+        }
+
+        @media screen and (max-width: 600px) {
+          font-size: $font-size-section-body-S;
+        }
+
+        &:before {
+          content: open-quote;
+          display: inline;
+          // height: 0;
+          line-height: 0;
+          left: -10px;
+          position: relative;
+          top: 45px;
+          color: $color-green-medium;
+          font-size: 10rem;
+        }
+
+        &::after {
+          content: close-quote;
+          display: inline;
+          // height: 0;
+          line-height: 0;
+          left: 10px;
+          position: relative;
+          top: 35px;
+          color: $color-green-medium;
+          font-size: 10rem;
+          vertical-align: text-top;
+        }
+      }
+      &__footer {
+        margin: 0;
+        padding-right: 10rem;
+        text-align: right;
+
+        font-style: italic;
+        color: $color-grey-light-2;
+        font-size: $font-size-section-body-M;
+      }
+    }
+  }
+}
