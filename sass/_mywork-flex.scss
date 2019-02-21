@@ -196,7 +196,7 @@
         &-text {
           // border-left: 1px solid $color-green-medium;
           // padding-left: 2rem;
-          // margin-bottom: 3rem;
+          margin-bottom: 3rem;
           // padding-bottom: 3rem;
 
           @media screen and (max-width: 1450px) and (-webkit-min-device-pixel-ratio: 3) {
@@ -206,7 +206,7 @@
 
           color: $color-grey-light-2;
 
-          font-size: $font-size-section-body-L;
+          font-size: $font-size-section-body-M;
           // font-size: 1.6rem;
 
 
@@ -237,6 +237,9 @@ ul {
   // margin-left: -1.0rem;
 
 
+
+
+
 }
 
 .btn {
@@ -250,6 +253,8 @@ ul {
 
   font-size: 1.5rem;
   border-radius: 5px;
+
+
 
 }
 
@@ -265,6 +270,7 @@ ul {
 
 .btn-right {
   width: 48%;
+
 }
 
 
@@ -303,31 +309,14 @@ a.btn-right:hover {
 
 }
 
-// .line-height {
-//   line-height: 25;
-//   visibility: hidden;
+// .box {
+
+//   display: flex;
+//   flex-direction: column;
+//   height: 25px;
+
+
+
+//   @media screen and (min-width: 1140px) and (max-width: 1350px) {}
+
 // }
-
-// .blank-row {
-//   height: 5rem !important;
-// }
-
-// .buttons:after {
-//   content: '.';
-//   visibility: hidden;
-//   line-height: 500;
-// }
-
-.box {
-
-  display: flex;
-  flex-direction: column;
-  height: 25px;
-
-  @media screen and (min-width: 1150px) and (max-width: 1350px) {
-
-    height: 250px;
-
-  }
-
-}
