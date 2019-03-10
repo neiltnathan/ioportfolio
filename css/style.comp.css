@@ -714,6 +714,24 @@ select option:checked:after {
         .mywork-grpBlocks-grpBlock__image-img {
           width: 100%;
           display: block; }
+        .mywork-grpBlocks-grpBlock__image-img1 {
+          width: 50%;
+          display: block; }
+          @media screen and (max-width: 1700px) {
+            .mywork-grpBlocks-grpBlock__image-img1 {
+              width: 35%; } }
+          @media screen and (max-width: 1350px) {
+            .mywork-grpBlocks-grpBlock__image-img1 {
+              width: 70%; } }
+          @media screen and (max-width: 1150px) {
+            .mywork-grpBlocks-grpBlock__image-img1 {
+              width: 25%; } }
+          @media screen and (max-width: 900px) {
+            .mywork-grpBlocks-grpBlock__image-img1 {
+              width: 30%; } }
+          @media screen and (max-width: 700px) {
+            .mywork-grpBlocks-grpBlock__image-img1 {
+              width: 40%; } }
       .mywork-grpBlocks-grpBlock-block {
         width: 99%;
         margin-bottom: 5rem; }
